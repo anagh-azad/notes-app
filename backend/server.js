@@ -1,9 +1,11 @@
-const express = require("express");
-const notes = require("./data/notes");
-const dotenv = require("dotenv");
+import express from "express";
+import notes from "./data/notes.js";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
 
 const app = express();
 dotenv.config();
+connectDB();
 
 app.get("/", (req, res) => {
   res.send("API is running");

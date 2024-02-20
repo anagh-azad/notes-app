@@ -1,4 +1,4 @@
-export const notes = [
+const notes = [
   {
     _id: "1",
     title: "Day 1 of college",
@@ -27,4 +27,5 @@ export const notes = [
   },
 ];
 
+export default notes;
 //module.exports = notes;
